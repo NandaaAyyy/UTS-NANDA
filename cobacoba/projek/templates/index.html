@@ -1,0 +1,213 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Nanda Shop</title>
+  <!-- fonts awesome style -->
+  <link rel="stylesheet" href="{% static 'css/myfirst.css' %}">
+  
+
+  <!-- Custom styles for this template -->
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <!-- responsive style -->
+  <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+</head>
+
+<body class="sub_page">
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="contact_nav_container">
+        <div class="container">
+          <div class="contact_nav">
+            <a href="">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <span>
+                Belanja hemat, ya disini tempatnya
+              </span>
+            </a>
+            <a href="">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <span>
+                Shopee:@NandaShop
+              </span>
+            </a>
+            <a href="">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <span>
+                Phone Call : 087899900022
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
+          <div class="custom_menu-btn">
+            <button onclick="openNav()">
+              <span class="s-1"> </span>
+              <span class="s-2"> </span>
+              <span class="s-3"> </span>
+            </button>
+          </div>
+          <div id="myNav" class="overlay">
+            <div class="menu_btn-style ">
+              <button onclick="closeNav()">
+                <span class="s-1"> </span>
+                <span class="s-2"> </span>
+                <span class="s-3"> </span>
+              </button>
+            </div>
+            <div class="overlay-content">
+              <a class="" href="index/"> Home <span class="sr-only">(current)</span></a>
+              <a class="" href="about/"> About</a>
+              <a class="" href="contact/"> Contact Us</a>
+            </div>
+          </div>
+          <a class="navbar-brand" href="index/">
+            <span>
+              Nanda Shop
+            </span>
+          </a>
+              <i class="fa fa-user" aria-hidden="true"></i>
+            </a>
+            <form class="form-inline">
+              <button class="btn  nav_search-btn" type="submit">
+                <i class="fa fa-search" aria-hidden="true"></i>
+              </button>
+            </form>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+  </div>
+
+
+  <!-- about section -->
+
+  <section class="about_section layout_padding">
+    <div class="container-fluid">
+      <div class="box">
+        <div class="img-box">
+          <img src = "{% static 'image/img.jpg' %}"/>
+        </div>
+        <div class="detail-box">
+          <h2>
+           Tentang Kami
+          </h2>
+          <p>
+            Nanda Shop adalah salah saltu platform belanja online yang saat ini sedang banyak digandrungi para remaja. di plaform ini tersedia berbagai produk yang cocok untuk semua kalangan baik bayi, anak-anak, remaja, dan orang dewasa. akses yang mudah dan harga yang terjangkau membuat platform ini pilihan semua orang.
+          </p>
+            <hr />
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end about section -->
+
+
+  <!-- info section -->
+
+  <section class="info_section layout_padding2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="info_contact">
+            <h5>
+              Address
+            </h5>
+            <div class="contact_link_box">
+              <a href="">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>
+                  Location
+                </span>
+              </a>
+              <a href="">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span>
+                  Phone Call : 087899900022
+                </span>
+              </a>
+              <a href="">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span>
+                  Nd@gmail.com
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="info_social">
+            <a href="">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="info_link_box">
+            <h5>
+              Navigation
+            </h5>
+            <div class="info_links">
+              <a class="active" href="index/"> <i class="fa fa-angle-right" aria-hidden="true"></i> Home <span class="sr-only">(current)</span></a>
+              <a class="active" href="about/"> <i class="fa fa-angle-right" aria-hidden="true"></i> About</a>
+              <a class="active" href="contact/"> <i class="fa fa-angle-" aria-hidden="true"></i> Contact Us</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <h5>
+            Newsletter
+          </h5>
+          <form action="">
+            <input type="text" placeholder="Enter Your email" />
+            <button type="submit">
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end info section -->
+
+  <!-- footer section -->
+  <footer class="footer_section container-fluid">
+    <p>
+      &copy; <span id="displayYear"></span> All Rights Reserved. Design by Designer
+    </p>
+  </footer>
+  <!-- footer section -->
+
+  <script src="{%static 'js/custom.js' %}"></script>
+  <script src="{%static 'js/bootstrap.js' %}"></script>
+  
+
+
+
+</body>
+
+</html>
